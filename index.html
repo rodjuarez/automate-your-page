@@ -1,0 +1,652 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+<head>
+  <title>Rodolfo A Juarez' Notes</title>
+  <link rel="stylesheet" href="stylep3.css">
+</head>
+<body>
+  <h1>Important Concepts</h1>
+	<h2>Telling Computers What to Do</h2>
+  <div class="lesson">
+    <h2>Lesson 1: Introduction to "Serious" Programming</h2>
+    <div class="concept">
+    <div class="concept-title">
+        Computer Science</div>
+      <div class="concept-description">
+        <p>
+          Computer Science is all about how to solve problems through establishing sequencial and very specific steps that a computer can follow.
+        </p>
+      <div class="concept-title">
+        Computer</div>
+      <div class="concept-description">
+        <p>
+          Computers by themselves are incapable of doing anything. In order to benefit from their processing power a series of commands, that is, a &quot;program&quot;, must be given to them in a language that they can read and follow, that will tell them exactly what to do and how to do it.
+      </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Computer Program
+      </div>
+      <div class="concept-description">
+        <p>
+        A program is a precise sequence of steps that a computer executes. Various programs can be combined and executed, or a very large one. These programs serve a purpose, whether entertainment, such as games; retrieve information, such as search engines; display information, such as Web browsers; calculate, such as spreadsheets; etc.      </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Programming Language
+      </div>
+      <div class="concept-description">
+        <p>
+        A programming language is made of rules to write commands that will tell a computer what and how to execute those commands. There are many programming languages. An example of a programming language is <em>Python</em>.
+        </p>
+</div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Python
+      </div>
+      <div class="concept-description">
+        <p>
+        Python is a high grade programming language. It not only <em>runs</em> or executes programming <em>code</em>, or commands, but it is also an <em>interpreter</em> that converts the code into instructions that the computer can understand and follow. It has an <em>editor page</em> where the code can be written, and a <em>run</em> option to execute the code.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Grammar</div>
+      <div class="concept-description">
+        <p>
+        Just as people use languages made of rules as to how to communicate, programming languages also use specific rules to do the same with computers. However, human languages are imperfect because they are ambiguos and depend of context to be understood. Programming languages cannot be ambiguos and cannot depend on cotext or the computer would not know what to do. Computers are stupid in the sense that they lack the intelligence to figure out and solve the ambiguity and in which context the commands should be executed. 
+        </p>
+        <p>
+        Unambiguos, specific and strict rules then must be followed in a good programming language to avoid problems with the code.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Python Expressions
+      </div>
+      <div class="concept-description">
+        <p>
+        A valid <em>Python expression</em>
+        is a command, or <em>statement</em>, that is written in accordance to the preset rules for this language. When it follows these rules it is said to be a <em>legal statement</em>. One that fails to follow these rules it is said to be an <em>ilegal statement</em>.
+        </p>
+        <p>
+        A <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3527838955/e-48704311/m-48736065" target="_blank">video</a> was given for the better understanding of the Python grammar and the understanding of <em>legal expresions</em>.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">Compilers</div>
+      <div class="concept-description">
+        <p>
+        A <em>compiler</em> is a program that runs programs and then writes new programs. The first compiler was written by Rear Admiral Grace Hopper with the name of Cobol, that allowed for faster processing by computers.
+        </p>
+        <p>
+        The difference between <em>compilers</em> and <em>interpreters</em>, such as Python, is that an interpreter runs and writes new programs at the same time, thus called a high level programming language.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+   <div class="lesson">
+    <h2>Lesson 2: Variables and Strings</h2>
+    <div class="concept">
+    <div class="concept-title">
+    	What is <b>Debugging?</b>
+	</div>
+    <div class="concept-description">
+    <p>Python, as many other programming languages, requires to be written in a very specific <em>syntax</em>, that is, without typos and mistakes for it to work, otherwise it leads to errors in the code.
+    </p>
+    <p>
+    Debugging is correcting code mistakes, called <b>"bugs".</b> For that a systematic system must be developed for finding and fixing the bugs in the code.
+    </p> 
+    </div>    
+      <div class="concept-title">
+        What is a <b>variable</b> in Python?
+      </div>
+      <div class="concept-description">
+        <p>
+        One of the most important tools developed to increase the speed and readability of the code is through the use of variables.
+        </p>
+		<p>
+        Variables are a way to assign <em>names</em> to <em>values.</em> En example would be: If <strong>speed_of_light</strong> is a variable and we <em>assign</em> it the value of 299,792,458 meters per second; and if we would like to know what half the speed of light is, we could use the <em>command</em> <strong>print</strong> to calculate the following equation: <span class="code"><strong>print speed_of_light / 2</strong></span>, which would produce <span class="code"><strong>149,896,229</strong></span> in meters per second. 
+        </p>
+		<p>
+        <strong>Comments</strong> to the code could be added by using a <em>hash tag <strong>&quot;#&quot;</strong></em> before the comment, which would not print.
+        </p>
+        <p>
+        It is not a rule but it is a convention not to write variables with capitalized letters.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What does it meant to <b>assign</b> a value to a variable? How is it done?
+      </div>
+      <div class="concept-description">
+        <p>
+        You assign a value to a variable by first specifying the <strong>name</strong> of the variable. The name of a variable can be anything but if the name is more than one word, the words <em>must be joined by an underscore</em>. For example: <strong>speed_of_light</strong> would be the correct way to specify a varialbe.
+        </p>
+        <p>
+        Then we would add an <em>equal</em> sign <strong>&quot;=&quot;</strong> on the right side of the varialbe. It is important to note that the sign equal does not mean the same in math than in programming, in which it <em>does not establish equality but that the value on the right has been assigned to the variable on the left</em>. Example: Variable: <span class="code"><strong>speed_of_light = 299792458</strong></span>. Thus, we have assigned the value 299,792,458 to the variable speed_of_light.
+        </p>
+      </div>
+    </div>
+      <div class="concept">
+      <div class="concept-title">
+        What are some ways variables are useful?
+      </div>
+      <div class="concept-description">
+        <p>
+          Variables can be useful to programmers in many ways:
+        </p>
+        <ul>
+          <li>
+          	They improve code readability by using names that allow for a more logical way for a programmer to write and later follow the code.		
+          </li>
+          <li>They provide an easier way to  store the value of important data.
+          </li>
+          <li>
+          	By reassigning new values to the same variable one can build more complex code, that gives us the ability to write more complex and faster solutions. For example: the variable <span class="code">time = time+1</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What is the difference between <span class="code">2 + 2</span> and <span class="code">"2" + "2"</span>?
+      </div>
+      <div class="concept-description">
+        <p>
+          In Python, <span class="code">2</span> is an integer while <span class="code">"2"</span> is a string, or a series of characters.
+        </p>
+        <p>
+          The code <span class="code">2 + 2</span> would produce the sum of these two integers, or<span class="code">4</span>. while the code <span class="code">"2" + "2"</span> would join both characters into a the string <span class="code">"22"</span>.
+         </p>
+		</div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What is a <b>String?</b>
+      </div>
+      <div class="concept-description">
+        <p>
+         A <b>string</b> is a series of characters surrounded by quotes, or double quotes. Quotes and double quotes cannot by combined, we can use one or the other. However, quotes can be included within double quotes, or viceversa. When a string is outputted it prints without the quotes.
+        </p>
+        <p>
+        Augusta Ada King, Countess of Lovelace (1812-1852) was the first one to introduce strings to code.
+        </p>
+		</div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What is <b>String Concatenation?</b>
+      </div>
+      <div class="concept-description">
+        <p>
+       	Operations can be used with strings. The plus "+" sign using strings does not produce an addition but the union (concatenation) of characters into a string such as: <span class="code"><b>"Welcome" + "back" + "!!"</b></span> would produce the result <span class="code"><b>Welcome back!!</b></span>
+        </p>
+        <p>
+        The <em>multiply</em> operator can also be used with strings resulting in multiplying the string or strings in question. For example: The result of <span class="code"><b>"love" * 3</b></span> would produce the result <span class="code"><b>lovelovelove</b></span>.
+        </p>
+      </div>
+    </div>
+	<div class="concept">
+      <div class="concept-title">
+        What is <b>String Indexing?</b>
+      </div>
+      <div class="concept-description">
+        <p>
+         Extracting sub sequences from strings cannot be done with numbers, only with strings. The code convention to do this is through the sequence, followed by an expression within square brackets: <span class="code"><b>string[&lt;expression&gt;]</b></span>. The expression would output a number that is the position withnin the string where the sequence is found. The string always begins with the first position of the first character with the value of the integer 0. Thus the string <span class="code"><b>"hello"</b></span> would have 5 positions, where <span class="code"><b>h=0, e=1, l=2, l=3, o=4</b></span>.
+        </p>
+        <p>
+        The string that is a subsequence of a character in s, begins from position <em>start</em> and it ends in the position <em>stop</em>, not counting the last character, represented by <b>"-1"</b>. So, in:
+        </p>
+        <p>We assig the value string "wave" to the string "word"
+        <br>
+        <span class="code"><b>word = "wave"</b></span>
+        <br>
+		<span class="code"><b>print word[0]</b></span>
+        <br>
+        <span class="code"><b>w</b></span>
+        <br>
+        The result = <b>w</b>, the position <b>0</b> equals the characther <b>w</b> in the word <em>wave</em>.        
+        </p>
+        <p>
+        Through <b>-1</b> it would produce the last character in the string. So <span class="code"><b>print word[-1]</b></span> would produce the result <span class="code"><b>e</b></span>.
+        </p>
+        <p>
+        A criterias could be used to find a subsequence coded as <span class="code"><b>string[0:1]</b></span> would produce the result <span class="code"><b>wa</b></span>, corresponding to positions 0 and 1.
+        </p>
+		</div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        The <b><em>find</em></b> Method
+      </div>
+      <div class="concept-description">
+        <p>
+       	In order to extract a subsequence from a string a tool can be used that facilitates the process, this is a method with the name of <b><em>find</em></b>. This is written as: <span class="code"><b>string.find[string]</b></span>. This will find the first instance of the subsequence in the string. If the subsequence cannot be found the result would produce the result <b>"-1"</b>.
+        </p>
+        <p>
+        Parameters can be added to the <em>find</em> method to find other than the first ocurrance of the subsequence in the string. For example, we will look for subsequences in the variable <span class="code"><b> Einstein = 'Before God we are all equally wise and equally foolish'</b></span>
+        </p>
+		<p>
+        <span class="code"><b>print Einstein.find('equally')
+        <br>
+        print Einstein.find(23)</b></span>
+        </p>
+        <p>
+        Would produce the restuls: <span class="code"><b>22</b></span> and <span class="code"><b>39</b></span>
+		 </p>
+         <p>
+		  Where <b>22</b> is the position of the first instance of the subsequence <em>equally</em> in the string and <b>39</b> is the position in the string of the second isntance of the same workd in the string.
+	    </p>
+    </div>
+    </div>
+  </div>
+  <div class="lesson">
+    <h2>Lesson 3: Input -> Function -> Output</h2>
+    <div class="concept">
+      <div class="concept-title">
+        What is a function or <b>procedure</b>?
+      </div>
+      <div class="concept-description">
+        <p>
+        A function its a group of instructions or procedures that indicate how and when to manipulate data. The funciton requires to define parameters or values that it stores once but that it can use multiple times.
+        </p>
+        <p>
+          An example could be to define a function defined as <span class="code"><b>sum</b></span> with two parameters or values <span class="code"><b>a,b</b></span>. we could specify that we want a return to be <span class="code"><b>a + b</b></span>. The output would produce the sum that we input for <b>a</b> and <b>b</b>.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+    	<div class="concept-title">
+        How do we <b>code</b> a function and how do we <b>use</b> it?
+        </div>
+      <div class="concept-description">
+        <p>
+        The first thing to code a funtion is to define it with the command <span class="code"><b>def</b></span> followed by the name of the function, such as <span class="code"><b>sum</b></span> and the parameters we are going to use in between parenthesis, and separated by comas. A colon ends the first line.
+        </p>
+        <p>
+        The second line will contain the procedures of what we want to do with the input parameters. For example, we could specify that we want to add the parameters such as <span class="code"><b>a + b</b></span>. 
+        </p>
+        <p>
+        The third line could include a variable or just the <span class="code"><b>print</b></span> command where we could input the values given to <b>a</b> and <b>b</b>. Example:
+        </p>
+        <p>
+        <span class="code"><b>def sum(a,b):</b></span>
+        <br>
+        <span class="code"><b>return a + b</b></span>
+        <br>
+        <span class="code"><b>print sum(1+2)</b></span>
+        <br>
+        <span class="code"><b>&gt;&gt;&gt;3</b></span>
+        </p>
+      </div>
+        </div>
+    <div class="concept">
+      <div class="concept-title">
+        What is the difference between <b>making</b> and <b>using</b> a function?
+      </div>
+      <div class="concept-description">
+        <p>
+          <b><em>Madking</em></b> refers to the code used to specify the procedure and parameters of what the function is for. <b><em>Using</em></b> refers to the input and output produced by the function as we input the values we want to calculate or change and the results that the function produces.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        How do functions help programmers avoid repetition?
+      </div>
+      <div class="concept-description">
+        <p>
+          The value of functions reside in their power to store procedures that can be reused or <em>called</em> over and over again without having to write them again. By changing the parameters values the same function can also be suded to calculate values that use the same procedure or function.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What happens if a function doesn't have a  <span class="code">return</span> statement?
+      </div>
+      <div class="concept-description">
+        <p>
+          The <span class="code"><b>return</b></span> command instructs the code to produce the type of output we desire to get fromt he code and the input paramaters we have selected., of course, the function would only execute but it would not produce any output.
+         </p>
+          </div>
+         </div>
+  	<div class="concept">
+  		<div class="concept-title">
+        When should you use a <b>function?</b>
+        </div>
+        <div class="concept-description">
+        <p>
+        	A function must be defined before it can be used. A function is useful to separate a portion of code, or <em>block of code</em> from the rest, which makes it easier to manipulate, modify, or debug. The power of its use come to light when we realize that we will be running the same code with the same input values or different ones throughout the program, so unnecessary repetition is avoided, and thus the risk for more mistakes and longer processing. That is why functions are so valuable.
+        </p>
+        </div>
+        </div>
+        </div>
+  <div class="lesson">
+    <h2>Lesson 4: Control Flow &amp; Loops <em>If</em> &amp; While</h2>
+    <div class="concept">
+      <div class="concept-title">
+        Equality decisions
+      </div>
+      <div class="concept-description">
+      <p>Equality operands include <em>"less than"</em> <span class="code"><b><</b></span>, <em>"greater than"</em> <span class="code"><b>></b></span>, <em>"equal to"</em> <span class="code"><b>==</b></span>, <em>"not equal to"</em> <span class="code"><b>!=</b></span>.
+      It is important to note that <span class="code"><b>=</b></span> and <span class="code"><b>==</b></span> are not the same. The first denotes assignment. In other words, a value has been assigned to a variable, while the second one refers to equality between two values.
+      </p>
+        <p>
+          The construct is <span class="code"><b>&lt;number&gt;&lt;operator&gt;&lt;number&gt;</b></span>. Example: <span class="code"><b>2 < 3</b></span> returns True, while <span class="code"><b>21 < 3</b></span> would result in a False statement.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+    	<div class="concept-title"><em>if</em> Statement</div>
+      <div class="concept-description">
+        <p>The <em>if</em> statement produces a True or False comparison result. Its construct is:
+        <br>
+        <span class="code"><b><em>if</em> &lt;text expression&gt;:</b></span>
+        <br>
+        <span class="code"><b> &lt;Block&gt;</b></span>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">The <em>or</em> operand </div>
+      <div class="concept-description">
+        <p>The or operand results in evaluating an expression, if it is True (validates the first expression) the following expressions are not evaluated. If it is False, it will continue validating the second expreesion, and so on. The matrix is: True or False = True. False or True = True. True or True = True. False or False = False.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">Loops</div>
+      <div class="concept-description">
+        <p>Loops is a procedure that repeats over and over the same procedure as long as it continues validating the procedure as True. Once it returns False the loop stops.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title"><em>While</em> loops</div>
+      <div class="concept-description">
+        <p><em>While Loops</em> are procedures that continue looping while certain condition remains True. As soon as the condition becomes False the <em>While Loop</em> stops. The construct is similar to the <em>if</em> expression: <br>
+        <span class="code"><b><em>while</em>&lt;Test Expression&gt;:</b></span>			        <br>
+        <span class="code"><b>&lt;Block&gt;</b></span>
+        </p>
+        <p>
+        The while loop will conitnue looping for every True statement. When it becomes False it will continue with the rest of the code.
+        </p>
+      </div>
+    </div>
+  	<div class="concept">
+  		<div class="concept-title">The <em>break</em> statement </div>
+        <div class="concept-description">
+  <p>The <em>break</em> statement stops the loop even if the <em>while</em> statement remains True. This is done to avoid a never ceasing loop, so that the rest of the code can be called. It is used after a while loop and its construct is:
+  <br>
+  <span class="code"><b>while&lt;Test Expression&gt;:</b></span>
+  <br>
+  <span class="code"><b>.....if&lt;Break Test&gt;: #is True</b></span>
+  <br>
+  <span class="code"><b>........break #stop looping continue with code</b></span>
+  </p>
+        </div>
+    </div>
+</div>
+<div class="lesson">
+    <h2>Lesson 5: Debugging</h2>
+    <div class="concept">
+      <div class="concept-title">
+        Debugging
+      </div>
+      <div class="concept-description">
+      <p>Debugging means finding and fixing code errors that prevent the code to work, or work correctly. It could also be rewriting code to make it faster or simpler.
+      </p>
+</div>
+    </div>
+    <div class="concept">
+    	<div class="concept-title">Debugging strategy </div>
+      <div class="concept-description">
+        There are  5 debugging strategies to follow:
+          <ol>
+          <li>
+            <p>
+            <b>Look up error messages when a program crashes</b>
+            </p>
+            <p>
+            The last line in the error message point out the error. From there one can go backwards to understand the problem and in which line of code it refers to. It is always useful to go online to find out more about that error code.
+            </p>
+          </li>
+          <li>
+            <p>
+            <b>Work using  example code</b>
+            </p>
+            <p>
+            When making changes to the code it is important to keep copies of the code instead of changing it so much that one looses track of what worked. It can be left as a comment, or it can be copied to another file. It is important to work out the code by small pieces at the time, ensuring that things work as you work through it.
+            </p>
+          </li>
+          <li>
+            <p>
+            <b>Make sure the example code work</b>
+            </p>
+            <p>
+            Sometimes it is a good idea to look up for similar existing code. However, it is important to test the code to ensure that it is bug free and that it works well with your own coding, ensuring that it produces the results that you expect. Otherwise, you will have to modify it or not use it at all.
+            </p>
+          </li>
+          <li>
+            <p>
+            <b>Check chunks of code as you go printing it</b></p>
+            <p>
+            Sometimes the code doesn't crash but it doesn't produce the desired results, which is harder to fix than when it crashes because we don't obtain an indication of where to find it and what type of error it is. The only way to work aroudn this is printing statements as you go through the code until you find the problem.
+            </p>
+          </li>
+          <li>
+            <p>
+            <b>Keep and compare old versions</b>
+            </p>
+            <p>
+            It is also important to save the code that works before adding more to it because if all else fails you can always go back to it as a starting point. It also serves as a small library of working code in my opinion.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+</div>
+<div class="lesson">
+    <h2>Lesson 6: Structured Data: Lists &amp; For Loops</h2>
+    <div class="concept">
+      <div class="concept-title">
+        Lists
+      </div>
+      <div class="concept-description">
+      <p>
+      A string is a sequence of characters only. The power of lists is that they contain a sequence of anything, numbers, characters, a mix of numbers and characters, and empty list and lists whithin lists. Another big difference is that lists support mutability where as strings do not.
+      List store complex items.</p>
+      <p>
+        Lists construct is:
+      <br>
+      <span class="code"><b>&lt;list&gt;[&lt;expression&gt;,&lt;expression&gt;,...]</b></span>. Example:
+      <br>
+      <span class="code"><b>p = [1,2,3,'a','b']</b></span>
+      </p>
+      </div>
+    </div>
+    <div class="concept">
+    	<div class="concept-title">Nested lists </div>
+      <div class="concept-description">
+        <p>
+        As said before, a list can be placed within another list. However, when printing the elements on the list, the nested list is considered as only one element. 
+        </p>
+        <p>
+        	Example: <span class="code"><b>p = [1,2,[3,4]]</b></span>. The restul would be 3 elements: 1, 2 and the nested list [3,4] as one element.      
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">Mutation </div>
+      <div class="concept-description">
+        <p>
+        Mutation is changing the value of a list once we have created it.
+        Every time a list is created it should be with in <span class="code"><b>[ ]</b></span> brackets. Every element in the list is assigned a number. The first element in the list is element or position "0", the second element is "1", and so on. Once an element is changed the list is mutated. Example:
+        </p>
+        <p>
+        <span class="code"><b>p = ["r", "o", "a", "d"]</b></span>
+        <br>
+        <span class="code"><b>p[0] = "l"</b></span> would mutate the list to:
+        <br>
+        <span class="code"><b>p = ["l", "o", "a", "d"]</b></span>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">Aliasing
+      </div>
+      <div class="concept-description">
+        <p>Aliasing is when two different ways are used to address the same list. Example:</p>
+        <p>
+        <span class="code"><b>p = [1,2,3]</b></span>
+        <br>
+        <span class="code"><b>q = p</b></span>
+        <br>
+        <span class="code"><b>p = [1,2,3]</b></span>
+        <br>
+        <span class="code"><b>q = [1,2,3]</b></span> where both "p" and "q" refer to the same list [1,2,3]. However, if changes are then done to list "p" again list "q" will remain the same.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Append
+      </div>
+      <div class="concept-description">
+        <p>
+        The append operand for lists is like a procedure but it is a method, so it works with strings too. It appends or incorporates an element at the end of a list. Its construct is: <span class="code"><b>&lt;list&gt;.append(&lt;element&gt;)</b></span>. It is important to note that the append operand mutates the list only, it does not create a new list.
+        </p>
+</div>
+    </div>
+  	<div class="concept">
+  		<div class="concept-title">+ Plus</div>
+        <div class="concept-description">
+        <p>
+        The "+" plus operand works like concatenation for strings. Its construct is:
+        <br>
+        <span class="code"><b>&lt;list&gt; + &lt;list&gt;</b></span>. Example:
+        </p>
+        <p>
+        <span class="code"><b>[0,1] + [2,3]</b></span> would result in <span class="code"><b>[0,1,2,3]</b></span>. It is important to note that "+" plus creates a new list, it <b>does not mutate it</b>. The difference between append and "+" is that append mutates the list but "+" creates a new list by concatenation.
+        </p>
+        </div>
+    </div>
+  	<div class="concept">
+  		<div class="concept-title">Len
+        </div>
+        <div class="concept-description">
+        <p>
+        Len stand for length. It works like a procedure. it produces the number of elements in a llist or the length of the list. Its construct is:
+        <br>
+        <span class="code"><b>len(&lt;list&gt;)</b></span>. It will not work with strings. Example:
+        </p>
+        <p>
+        <span class="code"><b>len([0,1]</b></span> would result in <span class="code"><b>2</b></span>.
+        </p>
+        </div>
+    </div>
+  	<div class="concept">
+  		<div class="concept-title"><em>for</em> Loops</div>
+        <div class="concept-description">
+        <p>
+        <em>for</em> loops is an easier way to loop for loops rather than using while. The way it works is that it reads it as for each element in the list evaluate the block of code, going through the list. Its construct is:
+        <br>
+        <span class="code"><b>for &lt;name&gt; in &lt;list&gt;:</b></span>
+        <br>
+        <span class="code"><b>....&lt;Block&gt;</b></span>
+        </p>
+        </div>
+    </div>
+  	<div class="concept">
+  		<div class="concept-title">Index
+        </div>
+        <div class="concept-description">
+        <p>
+       	  As its name implies, the <em>index</em> operand indexes the list, taht is, looks for an element in the list. If the element is not found in the list is returns an error message. when several similar elements are contained in a list, the index operand will only return the first element. Its construct is:
+          <br>
+          <span class="code"><b>&lt;list&gt;.index(&lt;value&gt;)</b></span>
+          </p>
+        </div>
+    </div>
+  	<div class="concept">
+  		<div class="concept-title">The <em>in</em> procedure call </div>
+        <div class="concept-description">
+        <p>Sometimes a better way to find an element in a list is to use the <em>&quot;in&quot;</em> procedure. It looks for a value in a list. The result is produces is a bolean answer, True or False, so it does not produce an error message as the index procedure. Its construct is:
+        <br>
+        <span class="code"><b>&lt;value&gt; in &lt;list&gt;</b></span>, such as <span class="code"><b>3 in p</b></span>, find the element 3 in the list p.
+        </p>
+        <p>
+        Another way to construct it is by using its negative:
+        <br>
+        <span class="code"><b>&lt;value&gt; not in &lt;list&gt;</b></span>, which is the same as to saying:
+        <br>
+        <span class="code"><b>not &lt;value&gt; in &lt;list&gt;</b></span>, but easier to read.
+        </p>
+        </div>
+    </div>
+</div>
+<div class="lesson">
+    <h2>Lesson 7: How to Solve Problems</h2>
+    <div class="concept">
+      <div class="concept-title">
+        1. Don't Panic
+      </div>
+      <div class="concept-description">
+      <p>
+      The first thing to do is not to panic because if you lose your head you won't be able to work through it and will not work in a systematic manner.
+      </p>
+      </div>
+    </div>
+    <div class="concept">
+    	<div class="concept-title">2. What are the inputs? </div>
+      <div class="concept-description">
+        <p>
+        It is important to understand the problem and what it is asking. The first thing to understand is to understand what the inputs are. What goes in?  
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">What are the outputs? </div>
+      <div class="concept-description">
+        <p>
+        What is the problem requiring as a result, or output? What type of values will be required?
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">Solve the problem
+      </div>
+      <div class="concept-description">
+        <p>
+          Work
+        thorugh some examples by hand. Start using pseudo code that will help you understand the problem and how to solve it. Then the pseudo code can be writen in correct syntax once we know how to solve the problem.</p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        Simple mechanical solution
+      </div>
+      <div class="concept-description">
+        <p>
+        Simple mechanical solutions refer to pseudo code, which is a the way a human would solve the problem. Then code some examples checking if that solves the problem and produces the right output. Consider what the code does not address. It is important to add comments at every step of the way that will allow you and others to understand your code at a later date and will help with debugging.
+        </p>
+      </div>
+    </div>
+  	<div class="concept">
+  		<div class="concept-title">Develop incrementally and test as you go
+        </div>
+        <div class="concept-description">
+        <p>
+        	When
+        writing the code one should write it by blocks, incrementally, testing each block as you go. Then see if you can find a simpler way to produce the same result. In other words, simplify the code that will make it faster and easier to understand, a simpler solution because the bigger the code, the more complex it will be, and the greater the number of mistakes it might produce.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
